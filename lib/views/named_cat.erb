@@ -1,0 +1,22 @@
+
+<html>
+  <head>
+    <style>
+      h1 { color: green; }
+    </style>
+  </head>
+
+  <body>
+    <h1> My name is <%= @name %></h1>
+    <img src='http://bit.ly/1eze8aE' div style='border: medium dashed red'>
+
+    <% if @name.nil? %>
+    <form action>
+      <div>
+        <input type = "text" name = "name"/>
+        <input type = "submit" value = "Submit"/>
+      </div>
+    </form>
+    <% end %>
+  </body>
+</html>

@@ -9,10 +9,10 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/name-cat' do
+get '/named_cat' do
   p params
   @name = params[:name]
-  erb(:index)
+  erb(:named_cat)
 end
 
 
