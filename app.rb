@@ -9,18 +9,16 @@ get '/secret' do
   "Hello World on the secret channel"
 end
 
-get '/another_route' do
-  "It's another website"
+get'/random_cat' do
+
+@name = ['Amigo','Oscar','Viking'].sample
+erb(:index)
+
 end
 
-get'/more' do
-  "MoreMoreMoreMore"
-end
+get'/named_cat' do
+p params
+@name = params[:name]
+erb(:index)
 
-get'/again' do
-  "Againagainagainagain"
-end
-
-get'/cat' do
-  erb(:index)
 end
