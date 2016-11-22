@@ -16,9 +16,11 @@ erb(:index)
 
 end
 
-get'/named_cat' do
-p params
+post'/named_cat' do
 @name = params[:name]
 erb(:index)
+end
 
+get '/cat' do
+erb(:index)
 end

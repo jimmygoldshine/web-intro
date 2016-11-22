@@ -4,8 +4,8 @@
 
 
 
-<% if @name.nil? %>
-<form action="/named_cat">
+<% if @name.nil? || @name.empty? %>
+<form action="/named_cat" method="post">
 
 
 <label for="name"> Input your name here! </label>
