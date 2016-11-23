@@ -10,17 +10,16 @@ get '/secret' do
 end
 
 get'/random_cat' do
-
-@name = ['Amigo','Oscar','Viking'].sample
-erb(:index)
-
+  @name = ['Amigo','Oscar','Viking'].sample
+  erb(:index)
 end
 
 post'/named_cat' do
-@name = params[:name]
-erb(:index)
+  p params
+  @name = params[:name]
+  erb(:index)
 end
 
 get '/form' do
-erb(:form)
+  erb(:form)
 end
